@@ -12,13 +12,14 @@
   "usage": "에이전트에게 \"게임 기획서 만들어줘/전투 섹션 고쳐줘\"라고 하면 gdd_* 도구로 작성하고, 사이드바 \"게임 기획서\"에서 HTML로 봅니다.",
   "owner": "wakhang",
   "package": {
-    "url": "https://github.com/wakhang/omp-studio-plugins/releases/download/game-design-doc-v0.1.0/game-design-doc-0.1.0.ompplugin",
+    "url": "https://github.com/wakhang/omp-studio-plugin-game-design-doc/releases/download/v0.1.0/game-design-doc-0.1.0.ompplugin",
     "sha256": "77433dad99054f9280cd3d0313d3fbc8a88f7e06fb241422f7f27c882ec904a8",
     "size": 25403
   },
   "readme": {
-    "url": "https://github.com/wakhang/omp-studio-plugins/releases/download/game-design-doc-v0.1.0/game-design-doc-0.1.0.md",
+    "url": "https://github.com/wakhang/omp-studio-plugin-game-design-doc/releases/download/v0.1.0/README.md",
     "sha256": "58423acb6a2ae8548c1fa4bfaa9de1af30945df0afa3830d72caccfb15413314",
     "size": 1877
-  }
+  },
+  "repository": "https://github.com/wakhang/omp-studio-plugin-game-design-doc"
 }

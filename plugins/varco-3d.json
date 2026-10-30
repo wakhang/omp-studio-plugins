@@ -12,13 +12,14 @@
   "usage": "브라우저 없이 varco-3d MCP를 씁니다. 사이드바 \"VARCO 3D\"에서 한 번 로그인하면 편집기가 숨은 창에서 계속 연결됩니다.",
   "owner": "wakhang",
   "package": {
-    "url": "https://github.com/wakhang/omp-studio-plugins/releases/download/varco-3d-v0.2.0/varco-3d-0.2.0.ompplugin",
+    "url": "https://github.com/wakhang/omp-studio-plugin-varco-3d/releases/download/v0.2.0/varco-3d-0.2.0.ompplugin",
     "sha256": "7555e7a5cf75f8df6470e593aa4bde40b561c56b86f919cd1f24234d48b7f433",
     "size": 10938
   },
   "readme": {
-    "url": "https://github.com/wakhang/omp-studio-plugins/releases/download/varco-3d-v0.2.0/varco-3d-0.2.0.md",
+    "url": "https://github.com/wakhang/omp-studio-plugin-varco-3d/releases/download/v0.2.0/README.md",
     "sha256": "9662841e18e7191b28f08c799a597534076c6512f2ea854324231c486e4605a7",
     "size": 1798
-  }
+  },
+  "repository": "https://github.com/wakhang/omp-studio-plugin-varco-3d"
 }
