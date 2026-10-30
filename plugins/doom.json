@@ -12,13 +12,14 @@
   "usage": "대화창에 \"둠 하자\" 또는 입력창 👹 버튼 → ▶ DOOM 시작 → 게임 클릭 후 방향키·Ctrl·Space",
   "owner": "wakhang",
   "package": {
-    "url": "https://github.com/wakhang/omp-studio-plugins/releases/download/doom-v0.1.0/doom-0.1.0.ompplugin",
+    "url": "https://github.com/wakhang/omp-studio-plugin-doom/releases/download/v0.1.0/doom-0.1.0.ompplugin",
     "sha256": "8c8832a4da27e3b840f4969a9082df3b1d355e2b3011cd4883784a581e73f461",
     "size": 2449588
   },
   "readme": {
-    "url": "https://github.com/wakhang/omp-studio-plugins/releases/download/doom-v0.1.0/doom-0.1.0.md",
+    "url": "https://github.com/wakhang/omp-studio-plugin-doom/releases/download/v0.1.0/README.md",
     "sha256": "cb944218979d977dd3d47ae1066027d7f16c12fcdf2d0d9171808e31a14918b0",
     "size": 1226
-  }
+  },
+  "repository": "https://github.com/wakhang/omp-studio-plugin-doom"
 }

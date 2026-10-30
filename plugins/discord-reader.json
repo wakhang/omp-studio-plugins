@@ -12,13 +12,14 @@
   "usage": "설정에 봇 토큰을 넣고 \"디스코드 #채널 어제 대화 요약해줘\"라고 하면 AI가 discord_* 도구로 메시지를 읽습니다.",
   "owner": "wakhang",
   "package": {
-    "url": "https://github.com/wakhang/omp-studio-plugins/releases/download/discord-reader-v0.1.0/discord-reader-0.1.0.ompplugin",
+    "url": "https://github.com/wakhang/omp-studio-plugin-discord-reader/releases/download/v0.1.0/discord-reader-0.1.0.ompplugin",
     "sha256": "7e25371678c809966206bb11f0486a6f13a7bd4e6b085c363f06c4d3d72ad76b",
     "size": 10797
   },
   "readme": {
-    "url": "https://github.com/wakhang/omp-studio-plugins/releases/download/discord-reader-v0.1.0/discord-reader-0.1.0.md",
+    "url": "https://github.com/wakhang/omp-studio-plugin-discord-reader/releases/download/v0.1.0/README.md",
     "sha256": "e4d169c2da55ef22ed8ec128f98d6378f13bf92411b73f8066d3bfab20148d3f",
     "size": 1351
-  }
+  },
+  "repository": "https://github.com/wakhang/omp-studio-plugin-discord-reader"
 }

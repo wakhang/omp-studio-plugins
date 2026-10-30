@@ -13,13 +13,14 @@
   "usage": "에이전트가 chat_model 도구로 3D 모델(glb·fbx·obj·stl)을 넘기면 대화창 답변 안에서 돌려 보고 애니메이션까지 확인합니다.",
   "owner": "wakhang",
   "package": {
-    "url": "https://github.com/wakhang/omp-studio-plugins/releases/download/model-viewer-v0.1.0/model-viewer-0.1.0.ompplugin",
+    "url": "https://github.com/wakhang/omp-studio-plugin-model-viewer/releases/download/v0.1.0/model-viewer-0.1.0.ompplugin",
     "sha256": "91f34e14b34e6339d8c8e4531aafd81c3a2133c517ea265d3ed517664bb2b6eb",
     "size": 378993
   },
   "readme": {
-    "url": "https://github.com/wakhang/omp-studio-plugins/releases/download/model-viewer-v0.1.0/model-viewer-0.1.0.md",
+    "url": "https://github.com/wakhang/omp-studio-plugin-model-viewer/releases/download/v0.1.0/README.md",
     "sha256": "5d25cc8294e10c2e490d19d557d183a634674be747841ed910d7acb56ac7b334",
     "size": 1628
-  }
+  },
+  "repository": "https://github.com/wakhang/omp-studio-plugin-model-viewer"
 }
