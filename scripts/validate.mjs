@@ -98,7 +98,7 @@ function validatePackage(data, entry, label) {
     if (seen.has(path.toLowerCase())) fail(`${label}: duplicate package path ${path}`)
     seen.add(path.toLowerCase())
     const encoded = raw.files[path]
-    if (typeof encoded !== 'string' || !/^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/.test(encoded)) fail(`${label}: invalid base64 for ${path}`)
+    if (typeof encoded !== 'string' || Buffer.from(encoded, 'base64').toString('base64') !== encoded) fail(`${label}: invalid base64 for ${path}`)
   }
   if (!Object.hasOwn(raw.files, 'plugin.json')) fail(`${label}: missing plugin.json`)
   const manifest = parse(Buffer.from(raw.files['plugin.json'], 'base64').toString('utf8').replace(/^\uFEFF/, ''), `${label}/plugin.json`)
