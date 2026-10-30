@@ -26,6 +26,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Test validator policy
+        working-directory: registry
+        run: node --test scripts/validate.test.mjs
       - name: Validate pull request against base
         if: github.event_name == 'pull_request'
         working-directory: registry
