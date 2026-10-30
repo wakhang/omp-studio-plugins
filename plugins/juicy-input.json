@@ -1,0 +1,13 @@
+{
+  "id": "juicy-input",
+  "name": "입력창 타격감",
+  "version": "0.1.0",
+  "description": "대화 입력창에 타이핑할 때 커서에서 불꽃이 튀고 입력창이 흔들리며, 콤보 카운터와 효과음이 나옵니다. Enter로 보내면 폭발!",
+  "owner": "wakhang",
+  "repository": "https://github.com/wakhang/omp-plugin-juicy-input",
+  "package": {
+    "url": "https://github.com/wakhang/omp-plugin-juicy-input/releases/download/v0.1.0/juicy-input-0.1.0.ompplugin",
+    "sha256": "4ec91f242983c817eb722cbd537f3a6f526e11d749560eb362efc461fd1db14f",
+    "size": 7252
+  }
+}
