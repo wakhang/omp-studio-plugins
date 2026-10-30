@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto'
 import { execFileSync } from 'node:child_process'
 import { lstatSync, readFileSync, readdirSync } from 'node:fs'
+import { isDeepStrictEqual } from 'node:util'
 import { gunzipSync } from 'node:zlib'
 
 const ID = /^[a-z0-9][a-z0-9._-]{0,99}$/
@@ -58,6 +59,21 @@ function entryShape(entry, filename) {
     }
   }
 }
+// A maintainer may relocate unchanged release assets without publishing a new version.
+// No metadata other than the source repository and asset URLs may change.
+function sameVersionRelocation(old, next) {
+  const normalize = (entry) => {
+    const { repository, package: pkg, readme, ...rest } = entry
+    const stripUrl = (ref) => {
+      if (!record(ref)) return ref
+      const { url, ...remaining } = ref
+      return remaining
+    }
+    return { ...rest, package: stripUrl(pkg), readme: stripUrl(readme) }
+  }
+  return isDeepStrictEqual(normalize(old), normalize(next))
+}
+
 function releaseRef(ref, owner, label, max) {
   if (!record(ref)) fail(`${label}: expected a file reference`)
   if (!Number.isSafeInteger(ref.size) || ref.size < 1 || ref.size > max) fail(`${label}: size must be between 1 and ${max} bytes`)
@@ -130,7 +146,7 @@ async function main() {
         if (old && old.owner.toLowerCase() !== author.toLowerCase()) fail(`${file}: only the existing owner ${old.owner} can change this entry`)
         if (next && next.owner.toLowerCase() !== author.toLowerCase()) fail(`${file}: owner must match pull request author ${author}`)
       }
-      if (old && next) versionChecks.push({ file, old: old.version, next: next.version })
+      if (old && next) versionChecks.push({ file, old, next })
     }
   }
   const names = readdirSync('plugins').sort()
@@ -146,7 +162,10 @@ async function main() {
     console.log(`Validated ${file} (${entry.version})`)
   }
   for (const { file, old, next } of versionChecks) {
-    if (compareVersions(next, old) <= 0) fail(`${file}: version must be newer than base version ${old}`)
+    if (compareVersions(next.version, old.version) <= 0 &&
+        !(author.toLowerCase() === 'wakhang' && next.version === old.version && sameVersionRelocation(old, next))) {
+      fail(`${file}: version must be newer than base version ${old.version}`)
+    }
   }
 }
 main().catch((error) => { console.error(`Validation failed: ${error.message}`); process.exitCode = 1 })
