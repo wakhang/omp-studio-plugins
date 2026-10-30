@@ -1,0 +1,24 @@
+{
+  "id": "doom",
+  "name": "DOOM",
+  "version": "0.1.0",
+  "description": "대화창에서 DOOM(1993 셰어웨어)을 플레이합니다. \"둠 하자\"라고 하면 답변 안에 게임이 뜨고, 입력창 👹 버튼으로 바로 열 수도 있습니다. 엔진: jacobenget/doom.wasm (GPL-2.0).",
+  "author": "wakhang",
+  "tags": [
+    "game",
+    "doom",
+    "fun"
+  ],
+  "usage": "대화창에 \"둠 하자\" 또는 입력창 👹 버튼 → ▶ DOOM 시작 → 게임 클릭 후 방향키·Ctrl·Space",
+  "owner": "wakhang",
+  "package": {
+    "url": "https://github.com/wakhang/omp-studio-plugins/releases/download/doom-v0.1.0/doom-0.1.0.ompplugin",
+    "sha256": "8c8832a4da27e3b840f4969a9082df3b1d355e2b3011cd4883784a581e73f461",
+    "size": 2449588
+  },
+  "readme": {
+    "url": "https://github.com/wakhang/omp-studio-plugins/releases/download/doom-v0.1.0/doom-0.1.0.md",
+    "sha256": "cb944218979d977dd3d47ae1066027d7f16c12fcdf2d0d9171808e31a14918b0",
+    "size": 1226
+  }
+}

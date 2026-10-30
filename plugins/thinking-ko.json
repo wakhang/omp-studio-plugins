@@ -1,0 +1,24 @@
+{
+  "id": "thinking-ko",
+  "name": "생각 한글 요약",
+  "version": "0.1.0",
+  "description": "에이전트의 생각(영어)을 작업 과정 위에 한글 한두 줄로 요약해 보여 주고, bash·read 같은 도구 카드는 숨깁니다.",
+  "tags": [
+    "한글",
+    "요약",
+    "생각",
+    "작업과정"
+  ],
+  "usage": "켜 두면 이후 에이전트의 영어 생각을 작업 과정 위에 한글 한두 줄로 요약해 보여 주고, bash·read 같은 도구 카드는 숨깁니다.",
+  "owner": "wakhang",
+  "package": {
+    "url": "https://github.com/wakhang/omp-studio-plugins/releases/download/thinking-ko-v0.1.0/thinking-ko-0.1.0.ompplugin",
+    "sha256": "a0e2013e44396f210071c0cf388ecf660f65de320f8d4de5ca6b1574e185b7ce",
+    "size": 11160
+  },
+  "readme": {
+    "url": "https://github.com/wakhang/omp-studio-plugins/releases/download/thinking-ko-v0.1.0/thinking-ko-0.1.0.md",
+    "sha256": "fd6ec7987ac266f26abf42c5cbc505dbef8a72c38762e0fc79104f495bd5ed9c",
+    "size": 1543
+  }
+}

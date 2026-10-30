@@ -1,0 +1,25 @@
+{
+  "id": "varco-sound",
+  "name": "VARCO Sound",
+  "version": "0.2.0",
+  "description": "AI가 VARCO Sound 웹 계정으로 사운드(SFX·앰비언스·음악)를 생성하고, 생성한 사운드를 목록으로 들어보고 저장하는 플러그인",
+  "tags": [
+    "VARCO",
+    "사운드",
+    "SFX",
+    "오디오",
+    "게임"
+  ],
+  "usage": "에이전트에게 \"이 게임에 필요한 사운드 만들어줘\"라고 하면 생성 후 VARCO Sound 화면에서 항목별로 듣고 고릅니다(전체 자동선택 가능).",
+  "owner": "wakhang",
+  "package": {
+    "url": "https://github.com/wakhang/omp-studio-plugins/releases/download/varco-sound-v0.2.0/varco-sound-0.2.0.ompplugin",
+    "sha256": "6ce821ecf5d10c763dbef31de40d82adf7268d9405d6d1bc8ec9fa5665432049",
+    "size": 32114
+  },
+  "readme": {
+    "url": "https://github.com/wakhang/omp-studio-plugins/releases/download/varco-sound-v0.2.0/varco-sound-0.2.0.md",
+    "sha256": "932be578d497ce43db0c0044b4a47f63f084037b0f22071c8420352e28a243d0",
+    "size": 2335
+  }
+}
