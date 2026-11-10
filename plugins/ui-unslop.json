@@ -1,0 +1,13 @@
+{
+  "id": "ui-unslop",
+  "name": "UI Unslop",
+  "version": "1.0.0",
+  "description": "제품의 성격을 보존하는 UI 디자인 진단·개선. 현재 세션에 안전한 리뷰 지침을 전달합니다.",
+  "owner": "alphamon1114",
+  "repository": "https://github.com/alphamon1114/omp-plugin-ui-unslop",
+  "package": {
+    "url": "https://github.com/alphamon1114/omp-plugin-ui-unslop/releases/download/v1.0.0/ui-unslop-1.0.0.ompplugin",
+    "sha256": "45d8d5a68ce692b1011f4b18ee3323acbb4f26d52d4db1f9f7e8510bfd588ac8",
+    "size": 8758
+  }
+}
